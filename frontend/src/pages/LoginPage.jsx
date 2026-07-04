@@ -13,7 +13,7 @@ function LoginPage() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setErrorText(""); // clear previous errors
+    setErrorText(""); 
 
     try {
       const response = await loginUser({ email, password });

@@ -1,7 +1,7 @@
 require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 
 if (!process.env.JWT_SECRET) {
-    console.warn('⚠️  WARNING: JWT_SECRET is not set. Using insecure default — set it in .env before deploying!');
+    console.warn('WARNING: JWT_SECRET is not set. Using insecure default — set it in .env before deploying!');
 }
 
 const express = require('express');

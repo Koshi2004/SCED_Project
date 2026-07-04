@@ -40,7 +40,6 @@ CREATE TABLE todos (
     CONSTRAINT fk_todos_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
--- Sample data (optional, safe to remove)
 INSERT INTO users (name, email, password)
 VALUES ('Riveen', 'riveen@uom.lk', 'hashed_pw_123');
 
